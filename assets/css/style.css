@@ -1,0 +1,113 @@
+    @import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
+    html {
+        line-height: 1.15;
+        /* 1 */
+        -webkit-text-size-adjust: 100%;
+        /* 2 */
+    }
+    
+    body {
+        margin: 0;
+    }
+    
+    .badge {
+        padding: 2px 0;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: inherit;
+        font-weight: inherit;
+    }
+    
+    blockquote,
+    dl,
+    dd,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    hr,
+    figure,
+    p,
+    pre {
+        margin: 0;
+    }
+    
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    a {
+        text-transform: capitalize
+    }
+    
+    .h5 {
+        font-size: 1.5rem;
+        font-weight: 800
+    }
+    
+    p {
+        letter-spacing: 0.05em;
+        font-size: 0.875rem;
+        --text-opacity: 1;
+        color: #a0aec0;
+        color: rgba(160, 174, 192, var(--text-opacity))
+    }
+    
+    .card {
+        border-radius: 0.25rem;
+        --bg-opacity: 1;
+        background-color: #fff;
+        background-color: rgba(255, 255, 255, var(--bg-opacity));
+        border-width: 1px;
+        --border-opacity: 1;
+        border-color: #e2e8f0;
+        border-color: rgba(226, 232, 240, var(--border-opacity))
+    }
+    
+    .card .card-header {
+        border-bottom-width: 1px;
+        padding: 1.5rem
+    }
+    
+    .card .card-body {
+        padding: 1.5rem
+    }
+    
+    .card .card-footer {
+        border-top-width: 1px;
+        padding: 1.5rem
+    }
+    
+    .report-card:hover .card {
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        --border-opacity: 1;
+        border-color: #fff;
+        border-color: rgba(255, 255, 255, var(--border-opacity));
+        transform: scale(1.01);
+    }
+    
+    .report-card:hover .footer {
+        padding: 0;
+        border-width: 0
+    }
+    
+    .report-card .footer,
+    .report-card .card {
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 300ms
+    }
