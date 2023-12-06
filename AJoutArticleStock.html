@@ -19,7 +19,7 @@
         <aside class="z-20 flex-shrink-0 hidden w-64 overflow-y-auto bg-white dark:bg-gray-800 md:block">
             <div class="py-4 text-gray-500 dark:text-gray-400">
                 <a class="ml-6 text-lg font-bold text-gray-800 dark:text-gray-200" href="#">
-            Windmill
+           Drapeau Ya Mboka
           </a>
                 <ul class="mt-6">
                     <li class="relative px-6 py-3">
@@ -443,6 +443,66 @@
                     </h2>
 
 
+                    <form class="w-full ">
+                        <div class="flex flex-wrap -mx-3 mb-6">
+                            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                            Code
+                          </label>
+                                <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane">
+
+                            </div>
+                            <div class="w-full md:w-1/2 px-3">
+                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                            Nom
+                          </label>
+                                <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe">
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap -mx-3 mb-2">
+                            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
+                     Prix achat
+                    </label>
+                                <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" type="text" placeholder="Albuquerque">
+                            </div>
+
+
+                            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-zip">
+                          Prix de Vente
+                        </label>
+                                <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-zip" type="text" placeholder="90210">
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap -mx-3 mb-2">
+                            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+                            Statut
+                          </label>
+                                <div class="relative">
+                                    <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+                                  <option>Pris en Compte</option>
+                                  <option>En rupture</option>
+                                  <option>A commander</option>
+                        </select>
+                                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
+                            Qté Mise en Stock
+                          </label>
+                                <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" type="text" placeholder="Albuquerque">
+                            </div>
+
+
+                        </div>
+                        <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Envoyé</button>
+
+                    </form>
+
                     <!-- With actions -->
                     <h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">
                         Table with actions
@@ -454,17 +514,23 @@
                                     <tr class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
                                         <th class="px-4 py-3">Code</th>
                                         <th class="px-4 py-3">Nom</th>
-                                        <th class="px-4 py-3">Valeur</th>
+                                        <th class="px-4 py-3">Prix achat</th>
                                         <th class="px-4 py-3">Prix de vente</th>
-                                        <th class="px-4 py-3">Stock
+                                        <th class="px-4 py-3">Total Vente</th>
+                                        <th class="px-4 py-3">Qté en Stock
 
                                             <p class=" text-gray-400 dark:text-gray-400">
-                                                (Quantité Stocker)
+                                                (Récent)
                                             </p>
                                         </th>
+                                        <th class="px-4 py-3">Qté Réel en Stock</th>
+
+
+                                        <th class="px-4 py-3">Statut</th>
+
+
+
                                         <th class="px-4 py-3">Date</th>
-                                        <th class="px-4 py-3">Status</th>
-                                        <th class="px-4 py-3">Mise en Stock</th>
                                     </tr>
                                 </thead>
                                 <tbody class="bg-white divide-y dark:divide-gray-700 dark:bg-gray-800">
@@ -486,17 +552,21 @@
                                         <td class="px-4 py-3 text-sm">
                                             16
                                         </td>
+
                                         <td class="px-4 py-3 text-sm">
-                                            6/10/2020
+                                            52
+                                        </td>
+
+                                        <td class="px-4 py-3 text-sm">
+                                            52
                                         </td>
                                         <td class="px-4 py-3 text-xs">
                                             <span class="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-full dark:bg-green-700 dark:text-green-100">
-                                    Stocker
+                                    Pris en compte
                                   </span>
                                         </td>
                                         <td class="px-4 py-3 text-sm">
-                                            <input id="vue-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-
+                                            6/10/2020
                                         </td>
 
                                     </tr>
@@ -518,17 +588,23 @@
                                         <td class="px-4 py-3 text-sm">
                                             16
                                         </td>
+
                                         <td class="px-4 py-3 text-sm">
-                                            6/10/2020
+                                            150
+                                        </td>
+
+
+
+                                        <td class="px-4 py-3 text-sm">
+                                            52
                                         </td>
                                         <td class="px-4 py-3 text-xs">
                                             <span class="px-2 py-1 font-semibold leading-tight text-red-700 bg-red-100 rounded-full dark:bg-red-700 dark:text-red-100">
-                                              Terminer
-                                            </span>
+                                          En rupture
+                                        </span>
                                         </td>
                                         <td class="px-4 py-3 text-sm">
-                                            <input id="vue-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-
+                                            6/10/2020
                                         </td>
 
                                     </tr>
@@ -538,10 +614,7 @@
 
                             </table>
                         </div>
-                        <div class="px-4 py-3">
-                            <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Stocker</button>
 
-                        </div>
 
                         <div class="grid px-4 py-3 text-xs font-semibold tracking-wide text-gray-500 uppercase border-t dark:border-gray-700 bg-gray-50 sm:grid-cols-9 dark:text-gray-400 dark:bg-gray-800">
 
